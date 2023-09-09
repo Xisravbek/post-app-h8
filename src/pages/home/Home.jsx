@@ -13,16 +13,13 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getAllFailure, getAllStart, getAllSuccess } from '../../store/slice/postSlice';
 import { PostService } from '../../services/postService';
 import PostCard from '../../components/postCard/PostCard';
-import { Link, Route, Routes } from 'react-router-dom';
+import { Link, Route, Routes, useNavigate } from 'react-router-dom';
 import AddPost from '../../components/addPost/AddPost';
 import Profile from '../../components/profile/Profile';
 import { items } from './items';
 const { Header, Sider, Content } = Layout;
 
-const handleLogout = () => {
-  localStorage.removeItem("token");
-  localStorage.removeItem("user");
-}
+
 
 const Home = () => {
   const { authSlice, postSlice } = useSelector(state => state);
@@ -30,7 +27,15 @@ const Home = () => {
   const { isChange } = postSlice;
   const [collapsed, setCollapsed] = useState(false);
   const [userInfo, setUserInfo ] = useState({posts: 0, like: 0, dislike: 0});
-  
+  const navigate = useNavigate()
+
+
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("user");
+    navigate("/login")
+    
+  }
 
   const {
     token: { colorBgContainer },
