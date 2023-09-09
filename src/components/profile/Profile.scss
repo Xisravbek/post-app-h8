@@ -1,0 +1,32 @@
+.profile{
+    &-header{
+        h3.name{
+            font-size: 30px;
+            text-align: center;
+            margin: 10px 0;
+        }
+        p.email{
+            text-align: center;
+            opacity: 0.5;
+
+        }
+        .profile-actions{
+            margin: 20px 0;
+            display: flex;
+            justify-content: space-evenly;
+            span{
+                h4{
+                    font-size: 22px;
+                    margin-bottom: 8px;
+                }
+                p{
+                    font-size: 25px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    &-body{
+        margin-top: 50px;
+    }
+}

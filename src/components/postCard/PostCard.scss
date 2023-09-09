@@ -1,0 +1,33 @@
+.post-card{
+    margin-bottom:30px ;
+    img{
+        height: 300px;
+        object-fit: cover;
+
+    }
+    .author{
+        font-size: 18px;
+        
+    }
+    .body{
+        h3{
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        p{
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            white-space: pre-wrap;
+        }
+    }
+    .footer{
+        display: flex;
+        gap: 30px;
+        padding-top: 10px;
+        span{
+            font-size: 22px;
+        }
+    }
+}

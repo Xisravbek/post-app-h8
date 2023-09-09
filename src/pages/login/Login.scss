@@ -1,0 +1,74 @@
+.login{
+    background: url("../../Image/img.jpg");
+    &-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        min-height: 100vh;
+        .left{
+            width: 300px;
+            height: 400px;
+            background: url("../../Image/pngwing.com.png") center center no-repeat ;
+            background-size: 80%;
+            back
+
+            img{
+                height: 400px;
+            }
+        }
+        .right{
+            
+            form{ 
+                border-radius: 16px;
+                backdrop-filter: blur(20px);
+                border: 1px solid rgba($color: #fff, $alpha: 0.15);
+                padding: 30px;
+                margin-bottom: 30px;
+                h2{
+                    margin-bottom: 15px;
+                    color: white;
+                    text-align: center;
+                    font-size: 30px;
+
+                }
+                button.ant-btn{
+                    width: 100%;
+                    border-radius: 17.5px;
+                    height: 35px;
+                    &:hover{
+                        color: blueviolet;
+                        border: 2px solid blueviolet;
+
+                    }
+
+                }
+                input, .password-inp{
+                    color: white;
+                    border-radius: 20px;
+                    height: 40px;
+                    border: 1px solid white;
+                    background-color: transparent;
+                    &::placeholder{
+                        color: white;
+                        text-transform: capitalize;
+                    }
+                }
+
+            }
+            p{ 
+                border-radius: 16px;
+                backdrop-filter: blur(20px);
+                border: 1px solid rgba($color: #fff, $alpha: 0.15);
+                padding: 30px;
+                margin-bottom: 30px;
+                color: white;
+                a{
+                    color: dodgerblue;
+                    margin-left: 10px;
+
+                }
+            }
+        }
+    }
+}
